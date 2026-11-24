@@ -1,0 +1,19 @@
+# Model API (Cerebras or Groq, both OpenAI-compatible) and the .env loader
+openai>=1.40
+python-dotenv
+
+# Embeddings and the student network
+sentence-transformers>=3.0
+torch>=2.2
+numpy
+scipy
+
+# Tables and charts
+pandas
+matplotlib
+
+# Response cache: the agent graph
+langgraph>=1.0,<2
+
+# Running the notebooks
+jupyter
