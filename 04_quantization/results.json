@@ -1,0 +1,138 @@
+{
+ "precision": [
+  {
+   "device": "cpu",
+   "dtype": "float32",
+   "ms": 8.271199883893132,
+   "vs_fp32": 1.0
+  },
+  {
+   "device": "cpu",
+   "dtype": "bfloat16",
+   "ms": 2380.606200080365,
+   "vs_fp32": 0.003474409116305717
+  },
+  {
+   "device": "cpu",
+   "dtype": "float16",
+   "ms": 2431.89705000259,
+   "vs_fp32": 0.003401130769036594
+  }
+ ],
+ "bits": {
+  "model": "distilgpt2",
+  "tokens": 353,
+  "weights_quantized": 42467328,
+  "rows": [
+   {
+    "bits": 32,
+    "granularity": "fp32",
+    "perplexity": 61.51040998443405,
+    "mb": 162.0
+   },
+   {
+    "bits": 8,
+    "granularity": "per-tensor",
+    "perplexity": 76.35437428598748,
+    "mb": 40.50004577636719
+   },
+   {
+    "bits": 8,
+    "granularity": "per-channel",
+    "perplexity": 61.7488876800097,
+    "mb": 40.5791015625
+   },
+   {
+    "bits": 8,
+    "granularity": "group-128",
+    "perplexity": 61.49985192899027,
+    "mb": 41.1328125
+   },
+   {
+    "bits": 4,
+    "granularity": "per-tensor",
+    "perplexity": 8450.10387661928,
+    "mb": 20.250045776367188
+   },
+   {
+    "bits": 4,
+    "granularity": "per-channel",
+    "perplexity": 108.8525631749004,
+    "mb": 20.3291015625
+   },
+   {
+    "bits": 4,
+    "granularity": "group-128",
+    "perplexity": 71.9433772896003,
+    "mb": 20.8828125
+   },
+   {
+    "bits": 3,
+    "granularity": "per-tensor",
+    "perplexity": 11352.296863481351,
+    "mb": 15.187545776367188
+   },
+   {
+    "bits": 3,
+    "granularity": "per-channel",
+    "perplexity": 764.204505073508,
+    "mb": 15.2666015625
+   },
+   {
+    "bits": 3,
+    "granularity": "group-128",
+    "perplexity": 291.741887626981,
+    "mb": 15.8203125
+   },
+   {
+    "bits": 2,
+    "granularity": "per-tensor",
+    "perplexity": 3134.8507295931136,
+    "mb": 10.125045776367188
+   },
+   {
+    "bits": 2,
+    "granularity": "per-channel",
+    "perplexity": 24653.58423958994,
+    "mb": 10.2041015625
+   },
+   {
+    "bits": 2,
+    "granularity": "group-128",
+    "perplexity": 29317.84383896569,
+    "mb": 10.7578125
+   }
+  ]
+ },
+ "int8": {
+  "fp32": {
+   "size_mb": 86.6831521987915,
+   "batch_ms": 191.1227498203516,
+   "single_ms": 10.122349951416254
+  },
+  "int8, one scale per matrix": {
+   "size_mb": 55.914334297180176,
+   "batch_ms": 142.50264992006123,
+   "single_ms": 15.810450073331594,
+   "cosine_mean": 0.950025200843811,
+   "cosine_min": 0.8694987297058105,
+   "flips": [
+    "'Tell me about Elon' vs 'Elon Musk' (same person): 0.621 -> 0.577",
+    "'Virat Kohli' vs 'Sachin Tendulkar' (different person): 0.652 -> 0.538"
+   ],
+   "pair_change": 0.11436325311660767
+  },
+  "int8, one scale per channel": {
+   "size_mb": 56.2549524307251,
+   "batch_ms": 136.63815008476377,
+   "single_ms": 15.716949943453074,
+   "cosine_mean": 0.976941704750061,
+   "cosine_min": 0.9382277727127075,
+   "flips": [
+    "'Tell me about Elon' vs 'Elon Musk' (same person): 0.621 -> 0.566",
+    "'Virat Kohli' vs 'Sachin Tendulkar' (different person): 0.652 -> 0.586"
+   ],
+   "pair_change": 0.06554830074310303
+  }
+ }
+}
