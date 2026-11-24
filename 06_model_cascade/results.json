@@ -1,0 +1,79 @@
+{
+ "student_ms": 10.122100124135613,
+ "teacher_ms": 481.90742240142845,
+ "teacher_cost_per_query": 0.00016428017241379311,
+ "rows": [
+  {
+   "threshold": 0.0,
+   "sent_to_llm": 0.0,
+   "agreement": 0.7011494252873564,
+   "agreement_if_random": 0.7011494252873565,
+   "student_right_when_kept": 0.7011494252873564,
+   "cost_per_1k": 0.0,
+   "mean_latency_ms": 10.122100124135613
+  },
+  {
+   "threshold": 0.4,
+   "sent_to_llm": 0.1149425287356322,
+   "agreement": 0.7672413793103449,
+   "agreement_if_random": 0.7363074712643677,
+   "student_right_when_kept": 0.7369099027154395,
+   "cost_per_1k": 0.018882778438367026,
+   "mean_latency_ms": 65.51375787142624
+  },
+  {
+   "threshold": 0.5,
+   "sent_to_llm": 0.3074712643678161,
+   "agreement": 0.8505747126436781,
+   "agreement_if_random": 0.7945977011494253,
+   "student_right_when_kept": 0.7839572398888546,
+   "cost_per_1k": 0.05051143232263179,
+   "mean_latency_ms": 158.29478459813802
+  },
+  {
+   "threshold": 0.6,
+   "sent_to_llm": 0.5057471264367815,
+   "agreement": 0.9195402298850576,
+   "agreement_if_random": 0.8532471264367816,
+   "student_right_when_kept": 0.8376229336681315,
+   "cost_per_1k": 0.0830842251288149,
+   "mean_latency_ms": 253.84539421221433
+  },
+  {
+   "threshold": 0.7,
+   "sent_to_llm": 0.7212643678160919,
+   "agreement": 0.9770114942528737,
+   "agreement_if_random": 0.9174712643678161,
+   "student_right_when_kept": 0.9190730837789661,
+   "cost_per_1k": 0.11848943470075309,
+   "mean_latency_ms": 357.70475248838426
+  },
+  {
+   "threshold": 0.8,
+   "sent_to_llm": 0.8678160919540229,
+   "agreement": 1.0,
+   "agreement_if_random": 0.9619683908045976,
+   "student_right_when_kept": 1.0,
+   "cost_per_1k": 0.142564977209671,
+   "mean_latency_ms": 428.32911611617976
+  },
+  {
+   "threshold": 0.9,
+   "sent_to_llm": 0.9540229885057471,
+   "agreement": 1.0,
+   "agreement_if_random": 0.9861494252873563,
+   "student_right_when_kept": 1.0,
+   "cost_per_1k": 0.1567270610384463,
+   "mean_latency_ms": 469.8728594266478
+  },
+  {
+   "threshold": 1.01,
+   "sent_to_llm": 1.0,
+   "agreement": 1.0,
+   "agreement_if_random": 1.0,
+   "student_right_when_kept": null,
+   "cost_per_1k": 0.1642801724137931,
+   "mean_latency_ms": 492.02952252556406
+  }
+ ]
+}
